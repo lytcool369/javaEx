@@ -10,7 +10,12 @@ public class LoopEx {
 //		forEx();
 //		continueEx();
 //		breakEx();
-		randomEx();
+//		randomEx();
+		
+		guguWhile();
+		starsWhile();
+		guguFor();
+		starsFor();
 	}
 	
 	public static void whileEx() {
@@ -103,12 +108,20 @@ public class LoopEx {
 		System.out.println();
 	}
 	
-
-	
-
-	
 	public static void guguWhile() {
 		//	2단부터 9단까지의 구구표를 while문을 이용하여 출력
+		int dan = 1;
+		int num = 1;
+		
+		do {
+			do {
+				System.out.print(dan + " X " + num + " = " + dan * num + "\t");
+				dan++;
+			} while (dan <= 9);
+			System.out.println();
+			dan = 1;
+			num++;
+		} while (num <= 9);
 	}
 	
 	public static void starsWhile() {
@@ -122,10 +135,29 @@ public class LoopEx {
 		 *****
 		 
 		 */
+		String star = "*";
+		int num = 1;
+		int line = 1;
+		
+		while (line <= 5) {
+			while (num <= line) {
+				System.out.print(star);
+				num++;
+			}
+			System.out.println();
+			num = 1;
+			line++;
+		}
 	}
 	
 	public static void guguFor() {
 		//	2단부터 9단까지의 구구표를 for문을 이용하여 출력
+		for (int num = 1; num <= 9; num++) {
+			for (int dan = 1; dan <= 9; dan++) {
+				System.out.print(dan + " X " + num + " = " + dan * num + "\t");
+			}
+			System.out.println();
+		}
 	}
 	
 	public static void starsFor() {
@@ -139,8 +171,13 @@ public class LoopEx {
 		 *****
 		 
 		 */
+		String star = "*";
+		
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(star);
+			}
+			System.out.println();
+		}
 	}
-	
-	
-
 }
