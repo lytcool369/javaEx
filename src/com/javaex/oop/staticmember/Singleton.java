@@ -4,7 +4,11 @@ package com.javaex.oop.staticmember;
 public class Singleton {
 	private static Singleton instance = new Singleton();
 	private int[] scores;
-
+	
+//	static {
+//		scores = new int[10];
+//	}
+	
 	// 생성자 -> new를 막아준다
 	// new 호출 불가
 	private Singleton() {
