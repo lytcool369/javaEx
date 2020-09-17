@@ -9,7 +9,7 @@ public class Scoreboard implements Cloneable {
 	public Scoreboard(int[] scores) {
 		this.scores = scores;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Scoreboard [scores=" + Arrays.toString(scores) + "]";
